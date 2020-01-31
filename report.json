@@ -1,0 +1,60 @@
+{
+  "differences": {
+    "Objeto001.Campo01__c": {
+      "a": {
+        "readable": "true",
+        "editable": "true"
+      },
+      "b": {
+        "readable": "false",
+        "editable": "true"
+      }
+    },
+    "Objeto002": {
+      "a": {
+        "allowCreate": "true",
+        "allowDelete": "true",
+        "allowEdit": "true",
+        "allowRead": "true",
+        "modifyAllRecords": "true",
+        "viewAllRecords": "true"
+      },
+      "b": {
+        "allowCreate": "true",
+        "allowDelete": "true",
+        "allowEdit": "true",
+        "allowRead": "true",
+        "modifyAllRecords": "false",
+        "viewAllRecords": "true"
+      }
+    }
+  },
+  "adds": {
+    "Objeto003.Campo0001__c": {
+      "editable": "true",
+      "readable": "true"
+    },
+    "Objeto003.Campo0002__c": {
+      "editable": "true",
+      "readable": "true"
+    },
+    "Objeto003.Campo0003__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Objeto003": {
+      "allowCreate": "true",
+      "allowDelete": "true",
+      "allowEdit": "true",
+      "allowRead": "true",
+      "modifyAllRecords": "false",
+      "viewAllRecords": "true"
+    },
+    "Objeto003.RegistroTipoW": {
+      "visible": "true"
+    },
+    "Objeto003.RegistroTipoAZ": {
+      "visible": "false"
+    }
+  }
+}

@@ -65,7 +65,6 @@ class Obj_Parser{
     }
     
     Run_Through_Obj (obj){
-        
         if (Array.isArray(obj)){
             obj.map((item) => {
                 this.Run_Through_Obj(item);
@@ -82,6 +81,6 @@ class Obj_Parser{
         }
     }
 }
-module.exports = function ({ obj, ignored_words, non_defined, key_words }) {
-    return new Obj_Parser({ obj, ignored_words, non_defined, key_words })
+module.exports = function ({ name, obj, ignored_words, non_defined, key_words }) {
+    return new Obj_Parser({ name, obj, ignored_words, non_defined, key_words })
 }
