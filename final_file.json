@@ -895,6 +895,30 @@
     "Equipamento__c.TXT_TANQUE_AREIA__c": {
       "editable": "false",
       "readable": "true"
+    },
+    "Aditivo__c.TXT_CD_ADIT_CNTR_SALESF__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "ContratoConta__c.DAT_INATIVACAO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "ContratoConta__c.FRM_NUMERO_CONTRATO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "ContratoConta__c.ID_EXTERNO_CONTA__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "ContratoConta__c.ID_EXTERNO_CONTRATO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "ContratoConta__c.LKP_Contrato__c": {
+      "editable": "false",
+      "readable": "true"
     }
   },
   "hasActivationRequired": "false",
@@ -990,6 +1014,14 @@
       "viewAllRecords": "false"
     },
     "ProdutoContrato__c": {
+      "allowCreate": "false",
+      "allowDelete": "false",
+      "allowEdit": "false",
+      "allowRead": "true",
+      "modifyAllRecords": "false",
+      "viewAllRecords": "false"
+    },
+    "Aditivo__c": {
       "allowCreate": "false",
       "allowDelete": "false",
       "allowEdit": "false",

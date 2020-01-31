@@ -1,8 +1,9 @@
-
+var convert     = require('xml-js');
+var fs          = require('fs');
 class Obj_Parser{
-    constructor({ name, obj, ignored_words, non_defined, key_words }){
+    constructor({ name, file, ignored_words, non_defined, key_words }){
         this.name           = name || 'default_name'
-        this.obj            = obj
+        this.file           = file
         this.parsed_obj     = {}
         this.ignored_words  = ignored_words
         this.non_defined    = non_defined
@@ -10,6 +11,10 @@ class Obj_Parser{
     }
 
     Run_Parse(){
+        let xml_file    = fs.readFileSync(this.file);
+        var json_file   = convert.xml2json(xml_file, {compact: true, spaces: 2});
+        this.obj        = JSON.parse(json_file)
+
         this.Run_Through_Obj(this.obj)
         if (this.non_defined.length > 0){
             console.log('Palavras não cadastradas')
@@ -81,6 +86,6 @@ class Obj_Parser{
         }
     }
 }
-module.exports = function ({ name, obj, ignored_words, non_defined, key_words }) {
-    return new Obj_Parser({ name, obj, ignored_words, non_defined, key_words })
+module.exports = function ({ name, file, ignored_words, non_defined, key_words }) {
+    return new Obj_Parser({ name, file, ignored_words, non_defined, key_words })
 }

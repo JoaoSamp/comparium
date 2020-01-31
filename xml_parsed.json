@@ -336,6 +336,10 @@
       "editable": "false",
       "readable": "true"
     },
+    "Aditivo__c.TXT_CD_ADIT_CNTR_SALESF__c": {
+      "editable": "false",
+      "readable": "true"
+    },
     "Aditivo__c.TXT_CD_COMP_JDE__c": {
       "editable": "false",
       "readable": "true"
@@ -604,6 +608,26 @@
       "editable": "false",
       "readable": "true"
     },
+    "ContratoConta__c.DAT_INATIVACAO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "ContratoConta__c.FRM_NUMERO_CONTRATO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "ContratoConta__c.ID_EXTERNO_CONTA__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "ContratoConta__c.ID_EXTERNO_CONTRATO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "ContratoConta__c.LKP_Contrato__c": {
+      "editable": "false",
+      "readable": "true"
+    },
     "ContratoConta__c.TXT_CD_COMP_JDE__c": {
       "editable": "false",
       "readable": "true"
@@ -625,6 +649,46 @@
       "readable": "true"
     },
     "Equipamento__c.NUM_VALOR_COMPRA__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_COD_COMPONENTE__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_FORNECEDOR__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_ITEM__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_NF_AQUISICAO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_NF_COMODATO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_NUM_ATIVO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_PROPRIETARIO__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_SEQUENCIAL__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_SERIE__c": {
+      "editable": "false",
+      "readable": "true"
+    },
+    "Equipamento__c.TXT_TANQUE_AREIA__c": {
       "editable": "false",
       "readable": "true"
     },
@@ -855,46 +919,6 @@
     "ProdutoContrato__c.NUM_VOLUME__c": {
       "editable": "false",
       "readable": "true"
-    },
-    "Equipamento__c.TXT_COD_COMPONENTE__c": {
-      "editable": "false",
-      "readable": "true"
-    },
-    "Equipamento__c.TXT_FORNECEDOR__c": {
-      "editable": "false",
-      "readable": "true"
-    },
-    "Equipamento__c.TXT_ITEM__c": {
-      "editable": "false",
-      "readable": "true"
-    },
-    "Equipamento__c.TXT_NF_AQUISICAO__c": {
-      "editable": "false",
-      "readable": "true"
-    },
-    "Equipamento__c.TXT_NF_COMODATO__c": {
-      "editable": "false",
-      "readable": "true"
-    },
-    "Equipamento__c.TXT_NUM_ATIVO__c": {
-      "editable": "false",
-      "readable": "true"
-    },
-    "Equipamento__c.TXT_PROPRIETARIO__c": {
-      "editable": "false",
-      "readable": "true"
-    },
-    "Equipamento__c.TXT_SEQUENCIAL__c": {
-      "editable": "false",
-      "readable": "true"
-    },
-    "Equipamento__c.TXT_SERIE__c": {
-      "editable": "false",
-      "readable": "true"
-    },
-    "Equipamento__c.TXT_TANQUE_AREIA__c": {
-      "editable": "false",
-      "readable": "true"
     }
   },
   "hasActivationRequired": "false",
@@ -908,6 +932,14 @@
       "allowRead": "true",
       "modifyAllRecords": "false",
       "viewAllRecords": "true"
+    },
+    "Aditivo__c": {
+      "allowCreate": "false",
+      "allowDelete": "false",
+      "allowEdit": "false",
+      "allowRead": "true",
+      "modifyAllRecords": "false",
+      "viewAllRecords": "false"
     },
     "Beneficio__c": {
       "allowCreate": "false",
@@ -1011,25 +1043,7 @@
     "Account.PontoVenda": {
       "visible": "true"
     },
-    "Contract.Bonificacao_Postecipada": {
-      "visible": "true"
-    },
-    "Contract.Fornecimento_de_Produto": {
-      "visible": "true"
-    },
-    "Parcela__c.Bonificacao_Postecipada": {
-      "visible": "true"
-    },
-    "Parcela__c.Locacao": {
-      "visible": "true"
-    },
-    "Parcela__c.Sublocacao": {
-      "visible": "true"
-    },
     "Aditivo__c.Locacao": {
-      "visible": "true"
-    },
-    "Aditivo__c.Sublocacao": {
       "visible": "true"
     },
     "Aditivo__c.Locacao_AMPM": {
@@ -1038,13 +1052,22 @@
     "Aditivo__c.Locacao_Imovel_Proprio": {
       "visible": "true"
     },
+    "Aditivo__c.Sublocacao": {
+      "visible": "true"
+    },
+    "Contract.Bonificacao_Postecipada": {
+      "visible": "true"
+    },
+    "Contract.Fornecimento_de_Produto": {
+      "visible": "true"
+    },
+    "Contract.Locacao": {
+      "visible": "true"
+    },
     "Contract.Locacao_AMPM": {
       "visible": "true"
     },
     "Contract.Locacao_Imovel_Proprio": {
-      "visible": "true"
-    },
-    "Contract.Locacao": {
       "visible": "true"
     },
     "Contract.Sublocacao": {
@@ -1068,10 +1091,19 @@
     "ContratoConta__c.Sublocacao": {
       "visible": "true"
     },
+    "Parcela__c.Bonificacao_Postecipada": {
+      "visible": "true"
+    },
+    "Parcela__c.Locacao": {
+      "visible": "true"
+    },
     "Parcela__c.Locacao_AMPM": {
       "visible": "true"
     },
     "Parcela__c.Locacao_Imovel_Proprio": {
+      "visible": "true"
+    },
+    "Parcela__c.Sublocacao": {
       "visible": "true"
     }
   }
