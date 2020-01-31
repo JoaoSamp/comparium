@@ -1,4 +1,49 @@
 {
-  "_declaration": {},
-  "PermissionSet": {}
+  "fieldPermissions": {
+    "Objeto001.Campo01__c": {
+      "readable": "true",
+      "editable": "true"
+    },
+    "Objeto001.Campo02__c": {
+      "editable": "true",
+      "readable": "true"
+    },
+    "Objeto001.Campo03__c": {
+      "editable": "true",
+      "readable": "true"
+    },
+    "Objeto002.Campo01__c": {
+      "editable": "true",
+      "readable": "true"
+    }
+  },
+  "objectPermissions": {
+    "Objeto001": {
+      "allowCreate": "true",
+      "allowDelete": "true",
+      "allowEdit": "true",
+      "allowRead": "true",
+      "modifyAllRecords": "true",
+      "viewAllRecords": "true"
+    },
+    "Objeto002": {
+      "allowCreate": "true",
+      "allowDelete": "true",
+      "allowEdit": "true",
+      "allowRead": "true",
+      "modifyAllRecords": "true",
+      "viewAllRecords": "true"
+    }
+  },
+  "recordTypeVisibilities": {
+    "Objeto001.RegistroTipoX": {
+      "visible": "true"
+    },
+    "Objeto001.RegistroTipoY": {
+      "visible": "true"
+    },
+    "Objeto002.RegistroTipoZ": {
+      "visible": "true"
+    }
+  }
 }
