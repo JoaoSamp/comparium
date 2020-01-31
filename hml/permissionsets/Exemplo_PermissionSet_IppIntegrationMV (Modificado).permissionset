@@ -1,0 +1,100 @@
+<!-- Exemplo de Arquivo PermissionSet de IppIntegrationMV.permissionset (ALTERADO) -->
+<!-- Init PermissionSet para Usuários IppIntegrationMV -->
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+	<!-- Start :: fieldPermissions Object: Objeto001 :: -->
+	<fieldPermissions>
+		<readable>false</readable>
+		<field>Objeto001.Campo01__c</field>
+		<editable>true</editable>
+	</fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>Objeto001.Campo02__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>Objeto001.Campo03__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<!-- End :: fieldPermissions Object: Objeto001 :: -->
+	<!-- Start :: fieldPermissions Object: Objeto002 :: -->
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>Objeto002.Campo01__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<!-- End :: fieldPermissions Object: Objeto002 :: -->
+	<!-- Start :: fieldPermissions Object: Objeto003 (NOVO) :: -->
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>Objeto003.Campo0001__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>Objeto003.Campo0002__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<fieldPermissions>
+        <editable>false</editable>
+        <field>Objeto003.Campo0003__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+	<!-- End :: fieldPermissions Object: Objeto003 :: -->
+	
+	<!-- Start :: ObjectPermissions :: -->
+	<objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Objeto001</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+	<objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Objeto002</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+	<objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Objeto003</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+	<!-- End :: ObjectPermissions :: -->
+	
+	<!-- Start :: recordTypeVisibilities :: -->
+	<recordTypeVisibilities>
+        <recordType>Objeto001.RegistroTipoX</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Objeto001.RegistroTipoY</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <recordType>Objeto002.RegistroTipoZ</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <recordType>Objeto003.RegistroTipoW</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <recordType>Objeto003.RegistroTipoAZ</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+	<!-- End :: recordTypeVisibilities :: -->
+</PermissionSet>
+<!-- End PermissionSet para Usuários IppIntegrationMV -->
