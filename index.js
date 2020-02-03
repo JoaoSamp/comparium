@@ -19,16 +19,15 @@ let key_words = {
     license :                   'value',
 } 
 
-let non_defined = []
 data_a = {
-    name: 'xml',
-    file: './hml/permissionsets/Matriz.permissionset'
+    name: 'hml',
+    file: './hml/permissionsets/IppIntegrationMV.permissionset'
 }
 data_b = {
     name: 'master',
-    file: './master/permissionsets/Matriz.permissionset'
+    file: './master/permissionsets/IppIntegrationMV.permissionset'
 }
 
-let comparium = comparer({data_a, data_b, key_words, ignored_words, non_defined})
+let comparium = comparer({data_a, data_b, key_words, ignored_words})
 comparium.Run_Comparison()
 comparium.Export('report')

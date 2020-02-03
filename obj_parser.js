@@ -1,12 +1,12 @@
 var convert     = require('xml-js');
 var fs          = require('fs');
 class Obj_Parser{
-    constructor({ name, file, ignored_words, non_defined, key_words }){
+    constructor({ name, file, ignored_words, key_words }){
         this.name           = name || 'default_name'
         this.file           = file
         this.parsed_obj     = {}
         this.ignored_words  = ignored_words
-        this.non_defined    = non_defined
+        this.non_defined    = {}
         this.key_words      = key_words
     }
 
@@ -86,6 +86,6 @@ class Obj_Parser{
         }
     }
 }
-module.exports = function ({ name, file, ignored_words, non_defined, key_words }) {
-    return new Obj_Parser({ name, file, ignored_words, non_defined, key_words })
+module.exports = function ({ name, file, ignored_words, key_words }) {
+    return new Obj_Parser({ name, file, ignored_words, key_words })
 }
